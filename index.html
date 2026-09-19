@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Zyroflex Hub</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+
+            <div class="logo-section">
+                <img src="logo.png" alt="Zyroflex Hub Logo">
+                <h2>Zyroflex Hub</h2>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#learning">Learning</a></li>
+                <li><a href="#workshops">Workshops</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#webinars">Webinars</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button class="join-btn" onclick="joinNow()">Join Now</button>
+
+        </nav>
+    </header>
+
+
+    <!-- Home -->
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <p class="small-title">WELCOME TO ZYROFLEX HUB</p>
+
+            <h1>
+                Learn. Build.
+                <span>Grow.</span>
+            </h1>
+
+            <p>
+                Upgrade your skills through practical learning,
+                workshops, courses and expert-led webinars.
+            </p>
+
+            <div class="hero-buttons">
+                <button onclick="scrollToCourses()">
+                    Explore Courses
+                </button>
+
+                <button class="outline-btn" onclick="scrollToWorkshops()">
+                    Explore Workshops
+                </button>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Learning -->
+    <section id="learning" class="section">
+
+        <p class="section-title">WHAT WE PROVIDE</p>
+
+        <h2>Learning Opportunities</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <div class="icon">📚</div>
+                <h3>Learning</h3>
+                <p>
+                    Learn new technologies and develop
+                    practical skills with structured learning.
+                </p>
+                <button onclick="learnMore('Learning')">
+                    Learn More
+                </button>
+            </div>
+
+            <div class="card">
+                <div class="icon">🛠️</div>
+                <h3>Workshops</h3>
+                <p>
+                    Participate in hands-on workshops
+                    conducted by experienced trainers.
+                </p>
+                <button onclick="learnMore('Workshops')">
+                    Explore
+                </button>
+            </div>
+
+            <div class="card">
+                <div class="icon">🎓</div>
+                <h3>Courses</h3>
+                <p>
+                    Build career-ready skills through
+                    practical and industry-focused courses.
+                </p>
+                <button onclick="scrollToCourses()">
+                    View Courses
+                </button>
+            </div>
+
+            <div class="card">
+                <div class="icon">🎤</div>
+                <h3>Webinars</h3>
+                <p>
+                    Attend interactive webinars with
+                    professionals and industry experts.
+                </p>
+                <button onclick="learnMore('Webinars')">
+                    View Webinars
+                </button>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Workshops -->
+    <section id="workshops" class="section light-section">
+
+        <p class="section-title">UPCOMING</p>
+
+        <h2>Workshops</h2>
+
+        <div class="course-container">
+
+            <div class="course-card">
+                <div class="course-image">💻</div>
+
+                <div class="course-content">
+                    <span>TECHNOLOGY</span>
+
+                    <h3>Web Development Workshop</h3>
+
+                    <p>
+                        Learn HTML, CSS and JavaScript
+                        through practical activities.
+                    </p>
+
+                    <p>📅 25 September 2026</p>
+
+                    <button onclick="register('Web Development Workshop')">
+                        Register
+                    </button>
+                </div>
+            </div>
+
+
+            <div class="course-card">
+                <div class="course-image">🤖</div>
+
+                <div class="course-content">
+                    <span>ARTIFICIAL INTELLIGENCE</span>
+
+                    <h3>AI & Machine Learning Workshop</h3>
+
+                    <p>
+                        Understand AI and ML concepts
+                        with real-world examples.
+                    </p>
+
+                    <p>📅 30 September 2026</p>
+
+                    <button onclick="register('AI & Machine Learning Workshop')">
+                        Register
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Courses -->
+    <section id="courses" class="section">
+
+        <p class="section-title">LEARN WITH US</p>
+
+        <h2>Popular Courses</h2>
+
+        <div class="course-container">
+
+            <div class="course-card">
+
+                <div class="course-image">🐍</div>
+
+                <div class="course-content">
+
+                    <span>PROGRAMMING</span>
+
+                    <h3>Python Programming</h3>
+
+                    <p>
+                        Learn Python from basics to
+                        practical programming.
+                    </p>
+
+                    <p>⏱ 6 Weeks</p>
+
+                    <button onclick="register('Python Programming')">
+                        Enroll Now
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="course-card">
+
+                <div class="course-image">🌐</div>
+
+                <div class="course-content">
+
+                    <span>WEB DEVELOPMENT</span>
+
+                    <h3>Full Stack Development</h3>
+
+                    <p>
+                        Learn frontend, backend and
+                        database technologies.
+                    </p>
+
+                    <p>⏱ 8 Weeks</p>
+
+                    <button onclick="register('Full Stack Development')">
+                        Enroll Now
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="course-card">
+
+                <div class="course-image">📊</div>
+
+                <div class="course-content">
+
+                    <span>DATA SCIENCE</span>
+
+                    <h3>Data Analytics</h3>
+
+                    <p>
+                        Learn Python, Pandas, visualization
+                        and data analysis.
+                    </p>
+
+                    <p>⏱ 6 Weeks</p>
+
+                    <button onclick="register('Data Analytics')">
+                        Enroll Now
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Webinars -->
+    <section id="webinars" class="section light-section">
+
+        <p class="section-title">CONNECT WITH EXPERTS</p>
+
+        <h2>Upcoming Webinars</h2>
+
+        <div class="webinar">
+
+            <div>
+                <h3>Career Opportunities in AI & Data Science</h3>
+
+                <p>
+                    Explore career paths, required skills,
+                    projects and industry opportunities.
+                </p>
+
+                <p>📅 5 October 2026 | ⏰ 6:00 PM</p>
+            </div>
+
+            <button onclick="register('AI & Data Science Webinar')">
+                Register Free
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- About -->
+    <section class="about">
+
+        <div>
+
+            <p class="section-title">ABOUT US</p>
+
+            <h2>Why Zyroflex Hub?</h2>
+
+            <p>
+                Zyroflex Hub is a learning platform designed
+                to help students and professionals gain
+                practical knowledge and industry-relevant skills.
+            </p>
+
+            <div class="stats">
+
+                <div>
+                    <h3>100+</h3>
+                    <p>Learners</p>
+                </div>
+
+                <div>
+                    <h3>20+</h3>
+                    <p>Workshops</p>
+                </div>
+
+                <div>
+                    <h3>10+</h3>
+                    <p>Courses</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+
+        <p class="section-title">GET IN TOUCH</p>
+
+        <h2>Contact Zyroflex Hub</h2>
+
+        <p>
+            Have questions about our courses or workshops?
+            Contact us today.
+        </p>
+
+        <form onsubmit="sendMessage(event)">
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Your Name"
+                required
+            >
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Your Email"
+                required
+            >
+
+            <textarea
+                id="message"
+                placeholder="Your Message"
+                required
+            ></textarea>
+
+            <button type="submit">
+                Send Message
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="footer-logo">
+            <img src="logo.png" alt="Zyroflex Hub">
+            <h3>Zyroflex Hub</h3>
+        </div>
+
+        <p>
+            Learn • Build • Grow
+        </p>
+
+        <p>
+            © 2026 Zyroflex Hub. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
