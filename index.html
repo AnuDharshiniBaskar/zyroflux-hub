@@ -1,0 +1,1381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#000000">
+
+    <title>ZyrofluxHub | Technology Training &amp; Project Development</title>
+
+    <meta name="description"
+          content="ZyrofluxHub - Technology training and project development: courses, workshops, webinars and real-world projects.">
+
+    <script>
+        /* apply the saved (or device) theme before the page paints, so there is no flash */
+        (function () {
+            var t = null;
+            try { t = localStorage.getItem("zh-theme"); } catch (e) {}
+            if (t !== "light" && t !== "dark") {
+                t = window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+            }
+            document.documentElement.setAttribute("data-theme", t);
+        })();
+    </script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="nav-container">
+
+            <a href="#home" class="brand">
+                <img src="./logo.png" alt="ZyrofluxHub Logo">
+
+                <div class="brand-text">
+                    <h2>ZyrofluxHub</h2>
+                    <span>IDEAS IN MOTION</span>
+                </div>
+            </a>
+
+            <nav class="nav-menu" id="navMenu" aria-label="Main menu">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#learning">Learning</a>
+                <a href="#workshops">Workshops</a>
+                <a href="#courses">Courses</a>
+                <a href="#projects">Projects</a>
+            </nav>
+
+            <a href="#contact" class="join-btn">
+                Register
+            </a>
+
+            <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to light theme">
+                <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.6M12 18.9v2.6M2.5 12h2.6M18.9 12h2.6M5.3 5.3l1.9 1.9M16.8 16.8l1.9 1.9M18.7 5.3l-1.9 1.9M7.2 16.8l-1.9 1.9"/></svg>
+                <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5a8.5 8.5 0 1 0 10.7 10.7Z"/></svg>
+            </button>
+
+            <button class="nav-toggle" id="navToggle" type="button"
+                    aria-label="Open menu" aria-expanded="false" aria-controls="navMenu">
+                <span></span><span></span><span></span>
+            </button>
+
+        </div>
+    </header>
+
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <p class="hero-small">
+                🚀 WELCOME TO ZYROFLUXHUB
+            </p>
+
+            <h1>
+                Learn.
+                <span>Build.</span>
+                Grow.
+            </h1>
+
+            <p class="hero-description">
+                Technology Training &amp; Project Development. We help students,
+                developers and businesses gain practical skills through courses,
+                workshops and webinars, and turn ideas into real projects.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#courses" class="primary-btn">
+                    Explore Courses
+                </a>
+
+                <a href="#workshops" class="secondary-btn">
+                    View Workshops
+                </a>
+
+            </div>
+</div>
+
+
+        <div class="hero-card">
+
+            <img
+                src="./logo.png"
+                alt="ZyrofluxHub Logo"
+                class="hero-logo"
+            >
+
+            <h3>Ideas in Motion</h3>
+
+            <p>
+                Learn new skills. Create real projects.
+                Build your future.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section id="about" class="section about-section">
+
+        <div class="about-content">
+
+            <div class="about-logo">
+
+                <img
+                    src="./logo.png"
+                    alt="ZyrofluxHub Logo"
+                >
+
+            </div>
+
+            <div>
+
+                <p class="section-label">
+                    ABOUT US
+                </p>
+
+                <h2>
+                    What is ZyrofluxHub?
+                </h2>
+
+                <p>
+                    ZyrofluxHub is a learning and technology
+                    company focused on technology training and
+                    project development, helping learners build practical
+                    skills through courses, workshops, webinars and
+                    real-world projects.
+                </p>
+
+                <p>
+                    Our goal is simple:
+                    <strong>Learn. Build. Grow.</strong>
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- LEARNING -->
+    <section id="learning" class="section">
+
+        <div class="section-heading">
+
+            <p class="section-label">
+                WHAT WE OFFER
+            </p>
+
+            <h2>
+                Learn With ZyrofluxHub
+            </h2>
+
+            <p>
+                Explore different learning opportunities designed
+                for your career and personal growth.
+            </p>
+
+        </div>
+
+
+        <div class="cards">
+
+            <div class="card">
+
+                <div class="card-icon">📚</div>
+
+                <h3>Learning</h3>
+
+                <p>
+                    Learn programming, AI, data science,
+                    web development and technology skills.
+                </p>
+
+                <a href="#courses">
+                    Start Learning →
+                </a>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="card-icon">🛠️</div>
+
+                <h3>Workshops</h3>
+
+                <p>
+                    Participate in practical workshops and
+                    gain hands-on experience.
+                </p>
+
+                <a href="#workshops">
+                    Explore Workshops →
+                </a>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="card-icon">🎓</div>
+
+                <h3>Courses</h3>
+
+                <p>
+                    Learn through structured courses designed
+                    for beginners and professionals.
+                </p>
+
+                <a href="#courses">
+                    View Courses →
+                </a>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="card-icon">💻</div>
+
+                <h3>Webinars</h3>
+
+                <p>
+                    Join expert-led webinars and learn about
+                    technology and career opportunities.
+                </p>
+
+                <a href="#webinars">
+                    Join Webinars →
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- WORKSHOPS -->
+    <section id="workshops" class="section dark-section">
+
+        <div class="section-heading">
+
+            <p class="section-label">
+                HANDS-ON EXPERIENCE
+            </p>
+
+            <h2>
+                Upcoming Workshops
+            </h2>
+
+            <p>
+                Learn by doing through practical and interactive sessions.
+            </p>
+
+        </div>
+
+
+        <div class="event-grid">
+
+            <div class="event-card">
+
+                <span class="event-tag">
+                    AI &amp; ML
+                </span>
+
+                <h3>
+                    Artificial Intelligence
+                </h3>
+
+                <p>
+                    Learn AI and Machine Learning concepts through practical examples.
+                </p>
+
+                <div class="event-info">
+                    📅 Coming Soon
+                </div>
+
+                <button class="event-btn">
+                    Register Now
+                </button>
+
+            </div>
+
+
+            <div class="event-card">
+
+                <span class="event-tag">
+                    DEVELOPMENT
+                </span>
+
+                <h3>
+                    Full Stack Web Development
+                </h3>
+
+                <p>
+                    Learn frontend and backend development and build modern websites.
+                </p>
+
+                <div class="event-info">
+                    📅 Coming Soon
+                </div>
+
+                <button class="event-btn">
+                    Register Now
+                </button>
+
+            </div>
+
+
+            <div class="event-card">
+
+                <span class="event-tag">
+                    SOFT SKILLS
+                </span>
+
+                <h3>
+                    Communication Skills
+                </h3>
+
+                <p>
+                    Improve your speaking, presentation and interview communication through practical exercises.
+                </p>
+
+                <div class="event-info">
+                    📅 Coming Soon
+                </div>
+
+                <button class="event-btn">
+                    Register Now
+                </button>
+
+            </div>
+
+
+            <div class="event-card">
+
+                <span class="event-tag">
+                    GENERATIVE AI
+                </span>
+
+                <h3>
+                    ChatGPT Generation
+                </h3>
+
+                <p>
+                    Learn to use ChatGPT to generate content, ideas, code and study material effectively.
+                </p>
+
+                <div class="event-info">
+                    📅 Coming Soon
+                </div>
+
+                <button class="event-btn">
+                    Register Now
+                </button>
+
+            </div>
+
+
+            <div class="event-card">
+
+                <span class="event-tag">
+                    GENERATIVE AI
+                </span>
+
+                <h3>
+                    Claude Utilization
+                </h3>
+
+                <p>
+                    Learn to use Claude for writing, research, analysis and everyday work.
+                </p>
+
+                <div class="event-info">
+                    📅 Coming Soon
+                </div>
+
+                <button class="event-btn">
+                    Register Now
+                </button>
+
+            </div>
+
+
+            <div class="event-card">
+
+                <span class="event-tag">
+                    CAREER
+                </span>
+
+                <h3>
+                    Career Guidance
+                </h3>
+
+                <p>
+                    Get guidance on choosing your career path, building your resume and preparing for placements.
+                </p>
+
+                <div class="event-info">
+                    📅 Coming Soon
+                </div>
+
+                <button class="event-btn">
+                    Register Now
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- COURSES -->
+    <section id="courses" class="section">
+
+        <div class="section-heading">
+
+            <p class="section-label">
+                BUILD YOUR SKILLS
+            </p>
+
+            <h2>
+                Our Courses
+            </h2>
+
+            <p>
+                Every course takes you from beginner to advanced, one module at a time. Finish a module, receive its certificate, and move on to the next when you are ready.
+            </p>
+
+        </div>
+
+
+        <div class="course-grid">
+
+            <div class="course-card">
+
+                <div class="course-image">
+                    <svg class="art" viewBox="0 0 320 160" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><defs><linearGradient id="g-ml" x1="0" y1="1" x2="1" y2="0"><stop offset="0" style="stop-color:var(--cyan)"/><stop offset="1" style="stop-color:var(--violet)"/></linearGradient></defs><path class="ax" d="M50 26V130H274"/><path d="M62 120C120 110 190 72 262 36" fill="none" stroke="url(#g-ml)" stroke-width="4" stroke-linecap="round"/><circle class="c" cx="74" cy="104" r="5"/><circle class="v" cx="92" cy="112" r="5"/><circle class="c" cx="108" cy="90" r="5"/><circle class="b" cx="126" cy="102" r="5"/><circle class="v" cx="146" cy="80" r="5"/><circle class="c" cx="164" cy="86" r="5"/><circle class="b" cx="182" cy="64" r="5"/><circle class="v" cx="200" cy="72" r="5"/><circle class="c" cx="220" cy="50" r="5"/><circle class="b" cx="240" cy="56" r="5"/><circle class="v" cx="256" cy="34" r="5"/><circle class="pulse" cx="256" cy="34" r="9" fill="none" stroke="var(--violet)" stroke-width="2"/><rect class="s" x="64" y="30" width="86" height="24" rx="12"/><text class="t" x="76" y="46">y = mx + b</text></svg>
+                </div>
+
+                <div class="course-content">
+
+                    <span class="course-level">
+                        BEGINNER → ADVANCED
+                    </span>
+
+                    <h3>
+                        Machine Learning
+                    </h3>
+
+                    <p>
+                        Build and evaluate machine learning models from scratch.
+                    </p>
+
+                    <p class="course-permod">Fee per module &middot; full course flat ₹1,000</p>
+
+                    <div class="course-bottom">
+                        <span>PSR Engg. College <b>₹200</b></span>
+                        <span>Other colleges <b>₹300</b></span>
+                    </div>
+
+                    <div class="course-actions">
+                        <button class="course-info-btn">
+                            View Details
+                        </button>
+                        <button class="course-btn">
+                            Enroll Now
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="course-card">
+
+                <div class="course-image">
+                    <svg class="art" viewBox="0 0 320 160" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><g class="edge"><line x1="60" y1="50" x2="130" y2="34"/><line x1="60" y1="50" x2="130" y2="64"/><line x1="60" y1="50" x2="130" y2="96"/><line x1="60" y1="50" x2="130" y2="126"/><line x1="60" y1="80" x2="130" y2="34"/><line x1="60" y1="80" x2="130" y2="64"/><line x1="60" y1="80" x2="130" y2="96"/><line x1="60" y1="80" x2="130" y2="126"/><line x1="60" y1="110" x2="130" y2="34"/><line x1="60" y1="110" x2="130" y2="64"/><line x1="60" y1="110" x2="130" y2="96"/><line x1="60" y1="110" x2="130" y2="126"/><line x1="130" y1="34" x2="200" y2="34"/><line x1="130" y1="34" x2="200" y2="64"/><line x1="130" y1="34" x2="200" y2="96"/><line x1="130" y1="34" x2="200" y2="126"/><line x1="130" y1="64" x2="200" y2="34"/><line x1="130" y1="64" x2="200" y2="64"/><line x1="130" y1="64" x2="200" y2="96"/><line x1="130" y1="64" x2="200" y2="126"/><line x1="130" y1="96" x2="200" y2="34"/><line x1="130" y1="96" x2="200" y2="64"/><line x1="130" y1="96" x2="200" y2="96"/><line x1="130" y1="96" x2="200" y2="126"/><line x1="130" y1="126" x2="200" y2="34"/><line x1="130" y1="126" x2="200" y2="64"/><line x1="130" y1="126" x2="200" y2="96"/><line x1="130" y1="126" x2="200" y2="126"/><line x1="200" y1="34" x2="270" y2="64"/><line x1="200" y1="34" x2="270" y2="96"/><line x1="200" y1="64" x2="270" y2="64"/><line x1="200" y1="64" x2="270" y2="96"/><line x1="200" y1="96" x2="270" y2="64"/><line x1="200" y1="96" x2="270" y2="96"/><line x1="200" y1="126" x2="270" y2="64"/><line x1="200" y1="126" x2="270" y2="96"/></g><circle class="c node" style="animation-delay:0.00s" cx="60" cy="50" r="8"/><circle class="c node" style="animation-delay:0.35s" cx="60" cy="80" r="8"/><circle class="c node" style="animation-delay:0.70s" cx="60" cy="110" r="8"/><circle class="b node" style="animation-delay:1.05s" cx="130" cy="34" r="8"/><circle class="b node" style="animation-delay:1.40s" cx="130" cy="64" r="8"/><circle class="b node" style="animation-delay:1.75s" cx="130" cy="96" r="8"/><circle class="b node" style="animation-delay:2.10s" cx="130" cy="126" r="8"/><circle class="b node" style="animation-delay:0.00s" cx="200" cy="34" r="8"/><circle class="b node" style="animation-delay:0.35s" cx="200" cy="64" r="8"/><circle class="b node" style="animation-delay:0.70s" cx="200" cy="96" r="8"/><circle class="b node" style="animation-delay:1.05s" cx="200" cy="126" r="8"/><circle class="v node" style="animation-delay:1.40s" cx="270" cy="64" r="8"/><circle class="v node" style="animation-delay:1.75s" cx="270" cy="96" r="8"/></svg>
+                </div>
+
+                <div class="course-content">
+
+                    <span class="course-level">
+                        BEGINNER → ADVANCED
+                    </span>
+
+                    <h3>
+                        Deep Learning
+                    </h3>
+
+                    <p>
+                        Understand neural networks and build deep learning models.
+                    </p>
+
+                    <p class="course-permod">Fee per module &middot; full course flat ₹1,000</p>
+
+                    <div class="course-bottom">
+                        <span>PSR Engg. College <b>₹200</b></span>
+                        <span>Other colleges <b>₹300</b></span>
+                    </div>
+
+                    <div class="course-actions">
+                        <button class="course-info-btn">
+                            View Details
+                        </button>
+                        <button class="course-btn">
+                            Enroll Now
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="course-card">
+
+                <div class="course-image">
+                    <svg class="art" viewBox="0 0 320 160" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><defs><linearGradient id="g-nlp" x1="0" y1="0" x2="1" y2="1"><stop offset="0" style="stop-color:var(--cyan)"/><stop offset="1" style="stop-color:var(--violet)"/></linearGradient></defs><rect class="s" x="34" y="24" width="152" height="48" rx="14"/><path class="s" d="M54 72 46 88 74 72Z"/><rect class="m" x="50" y="38" width="98" height="7" rx="3.5"/><rect class="m" x="50" y="52" width="66" height="7" rx="3.5"/><rect x="134" y="86" width="154" height="48" rx="14" fill="url(#g-nlp)"/><path d="M262 134 272 150 246 134Z" fill="url(#g-nlp)"/><rect x="150" y="100" width="100" height="7" rx="3.5" fill="#fff" opacity=".92"/><rect x="150" y="114" width="64" height="7" rx="3.5" fill="#fff" opacity=".7"/><circle class="v" cx="258" cy="40" r="17"/><text x="258" y="45" text-anchor="middle" fill="#fff" style="font-size:13px;font-weight:700">Aa</text><circle class="c" cx="286" cy="66" r="7"/><circle class="b float" cx="214" cy="30" r="5"/><g><circle class="m dot" cx="54" cy="116" r="4"/><circle class="m dot d2" cx="68" cy="116" r="4"/><circle class="m dot d3" cx="82" cy="116" r="4"/></g></svg>
+                </div>
+
+                <div class="course-content">
+
+                    <span class="course-level">
+                        BEGINNER → ADVANCED
+                    </span>
+
+                    <h3>
+                        NLP
+                    </h3>
+
+                    <p>
+                        Teach machines to read, understand and work with human language.
+                    </p>
+
+                    <p class="course-permod">Fee per module &middot; full course flat ₹1,000</p>
+
+                    <div class="course-bottom">
+                        <span>PSR Engg. College <b>₹200</b></span>
+                        <span>Other colleges <b>₹300</b></span>
+                    </div>
+
+                    <div class="course-actions">
+                        <button class="course-info-btn">
+                            View Details
+                        </button>
+                        <button class="course-btn">
+                            Enroll Now
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="course-card">
+
+                <div class="course-image">
+                    <svg class="art" viewBox="0 0 320 160" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><defs><linearGradient id="g-fl" x1="0" y1="0" x2="0" y2="1"><stop offset="0" style="stop-color:var(--cyan)"/><stop offset="1" style="stop-color:var(--violet)"/></linearGradient></defs><path class="s" d="M140 22H180V62L224 128Q232 144 214 144H106Q88 144 96 128L140 62Z" stroke-width="3"/><path d="M118 104H202L224 128Q232 144 214 144H106Q88 144 96 128Z" fill="url(#g-fl)" opacity=".9"/><rect class="s" x="132" y="16" width="56" height="10" rx="5"/><circle class="rise" cx="150" cy="120" r="5" fill="#fff" opacity=".85"/><circle class="rise r2" cx="172" cy="126" r="4" fill="#fff" opacity=".85"/><circle class="rise r3" cx="160" cy="114" r="3" fill="#fff" opacity=".85"/><text class="tc" x="44" y="88" style="font-size:26px;font-weight:700">{ }</text><text class="tv" x="238" y="60" style="font-size:22px;font-weight:700">&lt;/&gt;</text><circle class="c float" cx="250" cy="110" r="5"/><circle class="b float" cx="64" cy="40" r="4"/></svg>
+                </div>
+
+                <div class="course-content">
+
+                    <span class="course-level">
+                        BEGINNER → ADVANCED
+                    </span>
+
+                    <h3>
+                        Flask
+                    </h3>
+
+                    <p>
+                        Build web apps and APIs in Python, and deploy them.
+                    </p>
+
+                    <p class="course-permod">Fee per module &middot; full course flat ₹1,000</p>
+
+                    <div class="course-bottom">
+                        <span>PSR Engg. College <b>₹200</b></span>
+                        <span>Other colleges <b>₹300</b></span>
+                    </div>
+
+                    <div class="course-actions">
+                        <button class="course-info-btn">
+                            View Details
+                        </button>
+                        <button class="course-btn">
+                            Enroll Now
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="course-card">
+
+                <div class="course-image">
+                    <svg class="art" viewBox="0 0 320 160" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><rect class="s" x="46" y="20" width="228" height="120" rx="12"/><path d="M46 44H274" stroke="var(--art-stroke)" stroke-width="1.5"/><circle class="v" cx="62" cy="32" r="4.5"/><circle class="b" cx="78" cy="32" r="4.5"/><circle class="c" cx="94" cy="32" r="4.5"/><text x="62" y="70"><tspan class="tv">def</tspan><tspan class="t"> learn(skill):</tspan></text><text x="62" y="90"><tspan class="t">    return </tspan><tspan class="tc">skill</tspan><tspan class="t"> * 2</tspan></text><text x="62" y="112"><tspan class="tc">&gt;&gt;&gt; </tspan><tspan class="tb">print</tspan><tspan class="t">("Hello")</tspan></text><rect class="c blink" x="194" y="102" width="7" height="13" rx="1"/></svg>
+                </div>
+
+                <div class="course-content">
+
+                    <span class="course-level">
+                        BEGINNER → ADVANCED
+                    </span>
+
+                    <h3>
+                        Python
+                    </h3>
+
+                    <p>
+                        Start from zero and learn to write real Python programs.
+                    </p>
+
+                    <p class="course-permod">Fee per module &middot; full course flat ₹1,000</p>
+
+                    <div class="course-bottom">
+                        <span>PSR Engg. College <b>₹200</b></span>
+                        <span>Other colleges <b>₹300</b></span>
+                    </div>
+
+                    <div class="course-actions">
+                        <button class="course-info-btn">
+                            View Details
+                        </button>
+                        <button class="course-btn">
+                            Enroll Now
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="course-card">
+
+                <div class="course-image">
+                    <svg class="art" viewBox="0 0 320 160" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><defs><linearGradient id="g-ds" x1="0" y1="0" x2="0" y2="1"><stop offset="0" style="stop-color:var(--blue)"/><stop offset="1" style="stop-color:var(--violet)"/></linearGradient></defs><path class="ax" d="M40 134H282"/><rect x="52" y="112" width="14" height="20" rx="3" fill="url(#g-ds)" opacity=".85"/><rect x="70" y="96" width="14" height="36" rx="3" fill="url(#g-ds)" opacity=".85"/><rect x="88" y="74" width="14" height="58" rx="3" fill="url(#g-ds)" opacity=".85"/><rect x="106" y="52" width="14" height="80" rx="3" fill="url(#g-ds)" opacity=".85"/><rect x="124" y="36" width="14" height="96" rx="3" fill="url(#g-ds)" opacity=".85"/><rect x="142" y="28" width="14" height="104" rx="3" fill="url(#g-ds)" opacity=".85"/><rect x="160" y="36" width="14" height="96" rx="3" fill="url(#g-ds)" opacity=".85"/><rect x="178" y="52" width="14" height="80" rx="3" fill="url(#g-ds)" opacity=".85"/><rect x="196" y="74" width="14" height="58" rx="3" fill="url(#g-ds)" opacity=".85"/><rect x="214" y="96" width="14" height="36" rx="3" fill="url(#g-ds)" opacity=".85"/><rect x="232" y="112" width="14" height="20" rx="3" fill="url(#g-ds)" opacity=".85"/><path d="M46 130C96 130 116 26 159 26S222 130 274 130" fill="none" stroke="var(--cyan)" stroke-width="3.5" stroke-linecap="round"/><circle class="c pulse" cx="159" cy="26" r="6"/><circle class="v float" cx="250" cy="52" r="4"/><circle class="b float" cx="70" cy="56" r="4"/><circle class="c float" cx="270" cy="82" r="3"/></svg>
+                </div>
+
+                <div class="course-content">
+
+                    <span class="course-level">
+                        BEGINNER → ADVANCED
+                    </span>
+
+                    <h3>
+                        Data Science
+                    </h3>
+
+                    <p>
+                        Learn to prepare, explore, visualise and model data.
+                    </p>
+
+                    <p class="course-permod">Fee per module &middot; full course flat ₹1,000</p>
+
+                    <div class="course-bottom">
+                        <span>PSR Engg. College <b>₹200</b></span>
+                        <span>Other colleges <b>₹300</b></span>
+                    </div>
+
+                    <div class="course-actions">
+                        <button class="course-info-btn">
+                            View Details
+                        </button>
+                        <button class="course-btn">
+                            Enroll Now
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="course-card">
+
+                <div class="course-image">
+                    <svg class="art" viewBox="0 0 320 160" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><defs><linearGradient id="g-da" x1="0" y1="0" x2="0" y2="1"><stop offset="0" style="stop-color:var(--cyan)"/><stop offset="1" style="stop-color:var(--blue)"/></linearGradient></defs><rect class="s" x="34" y="16" width="252" height="130" rx="12"/><rect class="m" x="48" y="28" width="70" height="8" rx="4"/><rect x="48" y="44" width="62" height="26" rx="8" fill="url(#g-da)" opacity=".95"/><rect x="118" y="44" width="62" height="26" rx="8" class="v"/><rect x="188" y="44" width="62" height="26" rx="8" class="b"/><rect x="52" y="120" width="14" height="14" rx="3" fill="url(#g-da)"/><rect x="72" y="104" width="14" height="30" rx="3" fill="url(#g-da)"/><rect x="92" y="112" width="14" height="22" rx="3" fill="url(#g-da)"/><rect x="112" y="92" width="14" height="42" rx="3" fill="url(#g-da)"/><rect x="132" y="84" width="14" height="50" rx="3" fill="url(#g-da)"/><rect x="152" y="98" width="14" height="36" rx="3" fill="url(#g-da)"/><circle cx="222" cy="106" r="20" fill="none" stroke="var(--art-mute)" stroke-opacity=".35" stroke-width="11"/><circle cx="222" cy="106" r="20" fill="none" stroke="var(--violet)" stroke-width="11" stroke-dasharray="52 74" transform="rotate(-90 222 106)"/><circle cx="222" cy="106" r="20" fill="none" stroke="var(--cyan)" stroke-width="11" stroke-dasharray="30 96" stroke-dashoffset="-52" transform="rotate(-90 222 106)"/></svg>
+                </div>
+
+                <div class="course-content">
+
+                    <span class="course-level">
+                        BEGINNER → ADVANCED
+                    </span>
+
+                    <h3>
+                        Data Analytics
+                    </h3>
+
+                    <p>
+                        Turn raw data into insights with Excel, SQL and Power BI.
+                    </p>
+
+                    <p class="course-permod">Fee per module &middot; full course flat ₹1,000</p>
+
+                    <div class="course-bottom">
+                        <span>PSR Engg. College <b>₹200</b></span>
+                        <span>Other colleges <b>₹300</b></span>
+                    </div>
+
+                    <div class="course-actions">
+                        <button class="course-info-btn">
+                            View Details
+                        </button>
+                        <button class="course-btn">
+                            Enroll Now
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="course-card">
+
+                <div class="course-image">
+                    <svg class="art" viewBox="0 0 320 160" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><defs><linearGradient id="g-wd" x1="0" y1="0" x2="1" y2="0"><stop offset="0" style="stop-color:var(--blue)"/><stop offset="1" style="stop-color:var(--violet)"/></linearGradient></defs><rect class="s" x="40" y="18" width="240" height="126" rx="12"/><path d="M40 42H280" stroke="var(--art-stroke)" stroke-width="1.5"/><circle class="v" cx="56" cy="30" r="4.5"/><circle class="b" cx="72" cy="30" r="4.5"/><circle class="c" cx="88" cy="30" r="4.5"/><rect class="m" x="108" y="24" width="120" height="12" rx="6"/><rect x="54" y="54" width="212" height="28" rx="8" fill="url(#g-wd)"/><rect x="64" y="64" width="80" height="8" rx="4" fill="#fff" opacity=".9"/><rect class="m" x="54" y="92" width="96" height="40" rx="8"/><rect class="m" x="160" y="92" width="106" height="8" rx="4"/><rect class="m" x="160" y="106" width="80" height="8" rx="4"/><rect class="m" x="160" y="120" width="92" height="8" rx="4"/><path d="M212 96 212 128 220 121 226 134 232 131 226 118 237 118Z" fill="var(--art-ink)" stroke="var(--art-surface)" stroke-width="1.5" stroke-linejoin="round"/><rect class="v float" x="238" y="6" width="44" height="22" rx="11"/><text x="260" y="21" text-anchor="middle" fill="#fff" style="font-size:12px;font-weight:700">&lt;/&gt;</text></svg>
+                </div>
+
+                <div class="course-content">
+
+                    <span class="course-level">
+                        BEGINNER → ADVANCED
+                    </span>
+
+                    <h3>
+                        Web Development
+                    </h3>
+
+                    <p>
+                        Learn to design and build modern, full-stack websites.
+                    </p>
+
+                    <p class="course-permod">Fee per module &middot; full course flat ₹1,000</p>
+
+                    <div class="course-bottom">
+                        <span>PSR Engg. College <b>₹200</b></span>
+                        <span>Other colleges <b>₹300</b></span>
+                    </div>
+
+                    <div class="course-actions">
+                        <button class="course-info-btn">
+                            View Details
+                        </button>
+                        <button class="course-btn">
+                            Enroll Now
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    
+        <div class="path">
+
+            <h3>How learning works</h3>
+
+            <p>
+                Every course starts from the basics and goes deep, module by module.
+                You decide when to move ahead.
+            </p>
+
+            <ol class="path-steps">
+                <li>
+                    <b>Start with Module 1</b>
+                    <span>Begin from the basics. No prior knowledge needed.</span>
+                </li>
+                <li>
+                    <b>Learn and practise</b>
+                    <span>Hands-on tasks with guidance from experienced staff.</span>
+                </li>
+                <li>
+                    <b>Get your certificate</b>
+                    <span>Complete a module and receive a certificate for it.</span>
+                </li>
+                <li>
+                    <b>Go deeper</b>
+                    <span>Happy with the module? Continue to the next one, all the way to an advanced project.</span>
+                </li>
+            </ol>
+
+            <div class="path-cert">
+                <span aria-hidden="true">🎓</span>
+                <p>You get a certificate for every module you complete.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROJECT DEVELOPMENT -->
+    <section id="projects" class="section dark-section">
+
+        <div class="section-heading">
+
+            <p class="section-label">
+                PROJECT DEVELOPMENT
+            </p>
+
+            <h2>
+                From Idea to Working Project
+            </h2>
+
+            <p>
+                Besides training, we build. Bring your idea and
+                we will help you develop it.
+            </p>
+
+        </div>
+
+
+        <div class="cards">
+
+            <div class="card">
+
+                <div class="card-icon">🌐</div>
+
+                <h3>Web &amp; App Development</h3>
+
+                <p>
+                    Websites, web apps and mobile apps built for businesses, startups and institutions.
+                </p>
+
+                <a href="#contact">
+                    Discuss your project →
+                </a>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="card-icon">🤖</div>
+
+                <h3>AI &amp; Data Projects</h3>
+
+                <p>
+                    AI, machine learning and data analysis solutions built around your requirements.
+                </p>
+
+                <a href="#contact">
+                    Discuss your project →
+                </a>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="card-icon">📈</div>
+
+                <h3>Machine Learning Projects</h3>
+
+                <p>
+                    Prediction, classification and recommendation systems built with real data.
+                </p>
+
+                <a href="#contact">
+                    Discuss your project →
+                </a>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="card-icon">🧠</div>
+
+                <h3>Deep Learning Projects</h3>
+
+                <p>
+                    Image recognition and neural network projects using TensorFlow and Keras.
+                </p>
+
+                <a href="#contact">
+                    Discuss your project →
+                </a>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="card-icon">💬</div>
+
+                <h3>NLP Projects</h3>
+
+                <p>
+                    Chatbots, text analysis and language projects using modern NLP.
+                </p>
+
+                <a href="#contact">
+                    Discuss your project →
+                </a>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="card-icon">🔬</div>
+
+                <h3>Data Science Projects</h3>
+
+                <p>
+                    Data analysis, visualisation and dashboard projects from idea to demo.
+                </p>
+
+                <a href="#contact">
+                    Discuss your project →
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- WEBINARS -->
+    <section id="webinars" class="section webinar-section">
+
+        <div class="section-heading">
+
+            <p class="section-label">
+                CONNECT & DISCOVER
+            </p>
+
+            <h2>
+                Webinars
+            </h2>
+
+            <p>
+                Meet professionals, explore technologies
+                and discover new opportunities.
+            </p>
+
+        </div>
+
+
+        <div class="webinar-box">
+
+            <div class="webinar-content">
+
+                <span class="live-tag">
+                    🔴 LIVE SESSIONS
+                </span>
+
+                <h2>
+                    Learn From Experienced Staff
+                </h2>
+
+                <p>
+                    Join interactive webinars covering AI,
+                    technology, software development, careers
+                    and emerging trends.
+                </p>
+
+                <a href="#contact" class="primary-btn">
+                    Get Updates
+                </a>
+
+            </div>
+
+            <div class="webinar-icon">
+                🎤
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact-section">
+
+        <div class="section-heading">
+
+            <p class="section-label">
+                REGISTRATION
+            </p>
+
+            <h2>
+                Register Now
+            </h2>
+
+            <p>
+                Fill in your details and we will get in touch with you
+                soon to confirm your seat.
+            </p>
+
+        </div>
+
+
+<div class="contact-box">
+
+            <form id="contactForm" name="registration" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+
+                <input type="hidden" name="form-name" value="registration">
+                <input type="hidden" id="interest" name="interest">
+                <p hidden><label>Leave this empty: <input name="bot-field"></label></p>
+
+
+                <div class="form-group">
+
+                    <label for="name">
+                        Your Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your name"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="email">
+                        Email Address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="phone">
+                        Phone Number
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="Enter your phone number"
+                        inputmode="tel"
+                        autocomplete="tel"
+                        pattern="[0-9+\-\s]{10,15}"
+                        title="Enter a valid phone number (10 to 15 digits)"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="audience">
+                        Registering as
+                    </label>
+
+                    <select id="audience" name="audience" required>
+                        <option value="" disabled selected>Select one</option>
+                        <option value="PSR Engineering College">PSR Engineering College</option>
+                        <option value="Other College">Other college</option>
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="college">
+                        College / School Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="college"
+                        name="college"
+                        placeholder="Enter your college or school name"
+                        autocomplete="organization"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="department">
+                        Department
+                    </label>
+
+                    <select id="department" name="department" required>
+                        <option value="" disabled selected>Select your department</option>
+                        <option value="Computer Science &amp; Engineering (CSE)">Computer Science &amp; Engineering (CSE)</option>
+                        <option value="Information Technology (IT)">Information Technology (IT)</option>
+                        <option value="Artificial Intelligence &amp; Data Science (AI&amp;DS)">Artificial Intelligence &amp; Data Science (AI&amp;DS)</option>
+                        <option value="Artificial Intelligence &amp; Machine Learning (AI&amp;ML)">Artificial Intelligence &amp; Machine Learning (AI&amp;ML)</option>
+                        <option value="Electronics &amp; Communication (ECE)">Electronics &amp; Communication (ECE)</option>
+                        <option value="Electrical &amp; Electronics (EEE)">Electrical &amp; Electronics (EEE)</option>
+                        <option value="Mechanical Engineering">Mechanical Engineering</option>
+                        <option value="Civil Engineering">Civil Engineering</option>
+                        <option value="BCA / MCA">BCA / MCA</option>
+                        <option value="B.Sc / M.Sc (Computer Science)">B.Sc / M.Sc (Computer Science)</option>
+                        <option value="Not applicable">Not applicable (school / working)</option>
+                        <option value="Others">Others (not in the list)</option>
+                    </select>
+
+                </div>
+
+
+                <div class="form-group" id="deptOtherBox" hidden>
+
+                    <label for="deptOther">
+                        Your Department
+                    </label>
+
+                    <input
+                        type="text"
+                        id="deptOther"
+                        name="department_other"
+                        placeholder="Type your department"
+                    >
+
+                </div>
+
+
+
+        <div class="reg-pay">
+
+            <h3>Course &amp; Payment</h3>
+
+            <p class="reg-pay-hint">
+                Registering for a course? Pick it here to see the fee
+                and pay online. Skip this if you are sending a general enquiry.
+            </p>
+
+            <div class="form-group">
+
+                <label for="regCourse">
+                    Course
+                </label>
+
+                <select id="regCourse">
+                    <option value="">No course &ndash; general enquiry</option>
+                    <option value="Machine Learning">Machine Learning</option>
+                    <option value="Deep Learning">Deep Learning</option>
+                    <option value="NLP">NLP</option>
+                    <option value="Flask">Flask</option>
+                    <option value="Python">Python</option>
+                    <option value="Data Science">Data Science</option>
+                    <option value="Data Analytics">Data Analytics</option>
+                    <option value="Web Development">Web Development</option>
+                </select>
+
+            </div>
+
+            <div id="regPayBox" hidden>
+
+                <ul id="regModules" class="mod-list"></ul>
+
+                <p class="modal-cert">🎓 You get a certificate for every module you complete.</p>
+
+                <div class="mod-total">
+                    <span id="regSelected"></span>
+                    <b id="regTotal"></b>
+                </div>
+
+                <button type="button" class="modal-pay" id="regPayBtn">
+                    Pay Now
+                </button>
+
+                <div class="pay-panel" id="regPayPanel" hidden>
+                    <p class="pay-amount">Amount to pay: <b id="regPayAmount"></b></p>
+                    <div class="pay-upi" id="regPayUpi" hidden>
+                        <div class="pay-qr-row">
+                            <div class="pay-qr" id="regPayQr" aria-label="UPI QR code"></div>
+                            <div class="pay-qr-info">
+                                <p>UPI ID: <b id="regPayUpiId"></b> <button type="button" class="pay-copy" id="regPayCopy">Copy</button></p>
+                                <p class="pay-qr-hint">Scan with any UPI app to pay this exact amount.</p>
+                            </div>
+                        </div>
+                        <p class="pay-sub">Or pay with your own app (open this page on your phone):</p>
+                        <div class="pay-apps">
+                            <a class="pay-app" data-app="gpay" href="#">Google Pay</a>
+                            <a class="pay-app" data-app="phonepe" href="#">PhonePe</a>
+                            <a class="pay-app" data-app="paytm" href="#">Paytm</a>
+                            <a class="pay-app" data-app="upi" href="#">Other UPI apps</a>
+                        </div>
+                    </div>
+                    <a class="pay-alt" id="regPayLink" href="#" target="_blank" rel="noopener" hidden>Pay by card / net banking</a>
+                    <p class="pay-note" id="regPayNote"></p>
+                </div>
+
+            </div>
+
+        </div>
+
+                <button type="submit" class="primary-btn">
+                    Submit
+                </button>
+
+            </form>
+
+        </div>
+
+
+        <div class="contact-links">
+
+            <a href="mailto:zyrofluxhub@gmail.com" data-email>
+                <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2" fill="#fff"/><path d="M2 7.5V17a2 2 0 0 0 2 2h2.5V10z" fill="#4285F4"/><path d="M22 7.5V17a2 2 0 0 1-2 2h-2.5V10z" fill="#34A853"/><path d="M2 7.2 12 14.5 22 7.2V6a1 1 0 0 0-1-1h-.4L12 11.3 3.4 5H3a1 1 0 0 0-1 1z" fill="#EA4335"/></svg>
+                <span data-email-text>zyrofluxhub@gmail.com</span>
+            </a>
+
+            <a href="https://www.instagram.com/zyroflux_hub" target="_blank" rel="noopener" data-instagram>
+                <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true"><defs><linearGradient id="igGrad1" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#feda75"/><stop offset=".3" stop-color="#fa7e1e"/><stop offset=".55" stop-color="#d62976"/><stop offset=".8" stop-color="#962fbf"/><stop offset="1" stop-color="#4f5bd5"/></linearGradient></defs><rect width="24" height="24" rx="6" fill="url(#igGrad1)"/><rect x="5" y="5" width="14" height="14" rx="4" fill="none" stroke="#fff" stroke-width="1.7"/><circle cx="12" cy="12" r="3.3" fill="none" stroke="#fff" stroke-width="1.7"/><circle cx="16.3" cy="7.7" r="1" fill="#fff"/></svg>
+                <span data-instagram-text>@zyroflux_hub</span>
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <footer class="footer">
+
+        <div class="footer-top">
+
+            <div class="footer-brand">
+                <img src="logo.png" alt="ZyrofluxHub logo">
+                <div>
+                    <h3>ZyrofluxHub</h3>
+                    <p>Technology Training &amp; Project Development</p>
+                </div>
+            </div>
+
+            <div class="footer-cert">
+                <span aria-hidden="true">🎓</span>
+                <p>
+                    Finish every module of a course and receive that module's
+                    certificate from ZyrofluxHub. Complete all 5 modules to
+                    receive the full course completion certificate.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#learning">Learning</a>
+            <a href="#workshops">Workshops</a>
+            <a href="#courses">Courses</a>
+            <a href="#projects">Projects</a>
+        </div>
+
+        <div class="footer-social">
+            <a href="mailto:zyrofluxhub@gmail.com" data-email>
+                <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2" fill="#fff"/><path d="M2 7.5V17a2 2 0 0 0 2 2h2.5V10z" fill="#4285F4"/><path d="M22 7.5V17a2 2 0 0 1-2 2h-2.5V10z" fill="#34A853"/><path d="M2 7.2 12 14.5 22 7.2V6a1 1 0 0 0-1-1h-.4L12 11.3 3.4 5H3a1 1 0 0 0-1 1z" fill="#EA4335"/></svg>
+                <span data-email-text>zyrofluxhub@gmail.com</span>
+            </a>
+            <a href="https://www.instagram.com/zyroflux_hub" target="_blank" rel="noopener" data-instagram>
+                <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true"><defs><linearGradient id="igGrad2" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#feda75"/><stop offset=".3" stop-color="#fa7e1e"/><stop offset=".55" stop-color="#d62976"/><stop offset=".8" stop-color="#962fbf"/><stop offset="1" stop-color="#4f5bd5"/></linearGradient></defs><rect width="24" height="24" rx="6" fill="url(#igGrad2)"/><rect x="5" y="5" width="14" height="14" rx="4" fill="none" stroke="#fff" stroke-width="1.7"/><circle cx="12" cy="12" r="3.3" fill="none" stroke="#fff" stroke-width="1.7"/><circle cx="16.3" cy="7.7" r="1" fill="#fff"/></svg>
+                <span data-instagram-text>@zyroflux_hub</span>
+            </a>
+        </div>
+
+        <p class="footer-copy">© 2026 ZyrofluxHub. Ideas in Motion.</p>
+
+    </footer>
+
+
+<!-- COURSE DETAILS POP-UP -->
+    <div class="modal" id="courseModal" hidden>
+        <div class="modal-backdrop" data-close></div>
+        <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+            <button class="modal-close" aria-label="Close" data-close>✕</button>
+            <span class="course-level" data-m-level></span>
+            <h3 id="modalTitle" data-m-title></h3>
+            <p class="modal-desc" data-m-desc></p>
+            <div class="modal-meta">
+                <div><small>Full course</small><b data-m-full></b></div>
+                <div><small>Per module</small><b data-m-permod></b></div>
+            </div>
+            <h4>Who is joining?</h4>
+            <div class="aud" role="radiogroup" aria-label="Who is joining">
+                <label class="aud-opt"><input type="radio" name="aud" value="PSR Engineering College" checked><span>PSR Engineering College<small data-aud-price></small></span></label>
+                <label class="aud-opt"><input type="radio" name="aud" value="Other College"><span>Other college<small data-aud-price></small></span></label>
+            </div>
+            <h4>Choose your modules</h4>
+            <ul class="mod-list" data-m-modules></ul>
+            <p class="modal-cert">🎓 You get a certificate for every module you complete.</p>
+            <div class="mod-total"><span data-m-selected></span><b data-m-total></b></div>
+            <div class="modal-actions">
+                <button class="primary-btn modal-enroll">Enroll Now</button>
+                <button class="modal-pay" type="button">Pay Now</button>
+            </div>
+            <div class="pay-panel" hidden>
+                <p class="pay-amount">Amount to pay: <b data-pay-amount></b></p>
+                <div class="pay-upi" hidden>
+                    <div class="pay-qr-row">
+                        <div class="pay-qr" data-pay-qr aria-label="UPI QR code"></div>
+                        <div class="pay-qr-info">
+                            <p>UPI ID: <b data-pay-upi></b> <button type="button" class="pay-copy">Copy</button></p>
+                            <p class="pay-qr-hint">Scan with any UPI app to pay this exact amount.</p>
+                        </div>
+                    </div>
+                    <p class="pay-sub">Or pay with your own app (open this page on your phone):</p>
+                    <div class="pay-apps">
+                        <a class="pay-app" data-app="gpay" href="#">Google Pay</a>
+                        <a class="pay-app" data-app="phonepe" href="#">PhonePe</a>
+                        <a class="pay-app" data-app="paytm" href="#">Paytm</a>
+                        <a class="pay-app" data-app="upi" href="#">Other UPI apps</a>
+                    </div>
+                </div>
+                <a class="pay-alt" data-pay-link href="#" target="_blank" rel="noopener" hidden>Pay by card / net banking</a>
+                <p class="pay-note" data-pay-note></p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- REACT (used for the syllabus / module picker) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
+
+    <!-- QR CODE (offline, no external service - generates the UPI QR locally) -->
+    <script src="./qrcode.js"></script>
+
+    <!-- JAVASCRIPT -->
+    <script src="./script.js"></script>
+
+</body>
+</html>
