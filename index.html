@@ -48,8 +48,8 @@
                 <a href="#projects">Projects</a>
             </nav>
 
-            <a href="#courses" class="join-btn">
-                Join Now
+            <a href="#contact" class="join-btn">
+                Register
             </a>
 
             <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to light theme">
@@ -98,14 +98,6 @@
                 </a>
 
             </div>
-
-        
-            <ul class="hero-stats">
-                <li><b>8</b><span>Courses</span></li>
-                <li><b>5</b><span>Modules each</span></li>
-                <li><b>₹200</b><span>Per module</span></li>
-                <li><b>🎓</b><span>Certificate per module</span></li>
-            </ul>
 </div>
 
 
@@ -490,9 +482,11 @@
                         Build and evaluate machine learning models from scratch.
                     </p>
 
+                    <p class="course-permod">Fee per module &middot; full course flat ₹1,000</p>
+
                     <div class="course-bottom">
-                        <span>₹200 / module</span>
-                        <span class="course-price">₹1,000</span>
+                        <span>PSR Engg. College <b>₹200</b></span>
+                        <span>Other colleges <b>₹300</b></span>
                     </div>
 
                     <div class="course-actions">
@@ -529,9 +523,11 @@
                         Understand neural networks and build deep learning models.
                     </p>
 
+                    <p class="course-permod">Fee per module &middot; full course flat ₹1,000</p>
+
                     <div class="course-bottom">
-                        <span>₹200 / module</span>
-                        <span class="course-price">₹1,000</span>
+                        <span>PSR Engg. College <b>₹200</b></span>
+                        <span>Other colleges <b>₹300</b></span>
                     </div>
 
                     <div class="course-actions">
@@ -568,9 +564,11 @@
                         Teach machines to read, understand and work with human language.
                     </p>
 
+                    <p class="course-permod">Fee per module &middot; full course flat ₹1,000</p>
+
                     <div class="course-bottom">
-                        <span>₹200 / module</span>
-                        <span class="course-price">₹1,000</span>
+                        <span>PSR Engg. College <b>₹200</b></span>
+                        <span>Other colleges <b>₹300</b></span>
                     </div>
 
                     <div class="course-actions">
@@ -607,9 +605,11 @@
                         Build web apps and APIs in Python, and deploy them.
                     </p>
 
+                    <p class="course-permod">Fee per module &middot; full course flat ₹1,000</p>
+
                     <div class="course-bottom">
-                        <span>₹200 / module</span>
-                        <span class="course-price">₹1,000</span>
+                        <span>PSR Engg. College <b>₹200</b></span>
+                        <span>Other colleges <b>₹300</b></span>
                     </div>
 
                     <div class="course-actions">
@@ -646,9 +646,11 @@
                         Start from zero and learn to write real Python programs.
                     </p>
 
+                    <p class="course-permod">Fee per module &middot; full course flat ₹1,000</p>
+
                     <div class="course-bottom">
-                        <span>₹200 / module</span>
-                        <span class="course-price">₹1,000</span>
+                        <span>PSR Engg. College <b>₹200</b></span>
+                        <span>Other colleges <b>₹300</b></span>
                     </div>
 
                     <div class="course-actions">
@@ -685,9 +687,11 @@
                         Learn to prepare, explore, visualise and model data.
                     </p>
 
+                    <p class="course-permod">Fee per module &middot; full course flat ₹1,000</p>
+
                     <div class="course-bottom">
-                        <span>₹200 / module</span>
-                        <span class="course-price">₹1,000</span>
+                        <span>PSR Engg. College <b>₹200</b></span>
+                        <span>Other colleges <b>₹300</b></span>
                     </div>
 
                     <div class="course-actions">
@@ -724,9 +728,11 @@
                         Turn raw data into insights with Excel, SQL and Power BI.
                     </p>
 
+                    <p class="course-permod">Fee per module &middot; full course flat ₹1,000</p>
+
                     <div class="course-bottom">
-                        <span>₹200 / module</span>
-                        <span class="course-price">₹1,000</span>
+                        <span>PSR Engg. College <b>₹200</b></span>
+                        <span>Other colleges <b>₹300</b></span>
                     </div>
 
                     <div class="course-actions">
@@ -763,9 +769,11 @@
                         Learn to design and build modern, full-stack websites.
                     </p>
 
+                    <p class="course-permod">Fee per module &middot; full course flat ₹1,000</p>
+
                     <div class="course-bottom">
-                        <span>₹200 / module</span>
-                        <span class="course-price">₹1,000</span>
+                        <span>PSR Engg. College <b>₹200</b></span>
+                        <span>Other colleges <b>₹300</b></span>
                     </div>
 
                     <div class="course-actions">
@@ -1011,16 +1019,16 @@
         <div class="section-heading">
 
             <p class="section-label">
-                GET IN TOUCH
+                REGISTRATION
             </p>
 
             <h2>
-                Contact ZyrofluxHub
+                Register Now
             </h2>
 
             <p>
-                Have a question, collaboration idea or workshop
-                requirement? Get in touch with us.
+                Fill in your details and we will get in touch with you
+                soon to confirm your seat.
             </p>
 
         </div>
@@ -1092,15 +1100,30 @@
 
                 <div class="form-group">
 
+                    <label for="audience">
+                        Registering as
+                    </label>
+
+                    <select id="audience" name="audience" required>
+                        <option value="" disabled selected>Select one</option>
+                        <option value="PSR Engineering College">PSR Engineering College</option>
+                        <option value="Other College">Other college</option>
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
                     <label for="college">
-                        College Name
+                        College / School Name
                     </label>
 
                     <input
                         type="text"
                         id="college"
                         name="college"
-                        placeholder="Enter your college name"
+                        placeholder="Enter your college or school name"
                         autocomplete="organization"
                         required
                     >
@@ -1126,6 +1149,7 @@
                         <option value="Civil Engineering">Civil Engineering</option>
                         <option value="BCA / MCA">BCA / MCA</option>
                         <option value="B.Sc / M.Sc (Computer Science)">B.Sc / M.Sc (Computer Science)</option>
+                        <option value="Not applicable">Not applicable (school / working)</option>
                         <option value="Others">Others (not in the list)</option>
                     </select>
 
@@ -1147,6 +1171,77 @@
 
                 </div>
 
+
+
+        <div class="reg-pay">
+
+            <h3>Course &amp; Payment</h3>
+
+            <p class="reg-pay-hint">
+                Registering for a course? Pick it here to see the fee
+                and pay online. Skip this if you are sending a general enquiry.
+            </p>
+
+            <div class="form-group">
+
+                <label for="regCourse">
+                    Course
+                </label>
+
+                <select id="regCourse">
+                    <option value="">No course &ndash; general enquiry</option>
+                    <option value="Machine Learning">Machine Learning</option>
+                    <option value="Deep Learning">Deep Learning</option>
+                    <option value="NLP">NLP</option>
+                    <option value="Flask">Flask</option>
+                    <option value="Python">Python</option>
+                    <option value="Data Science">Data Science</option>
+                    <option value="Data Analytics">Data Analytics</option>
+                    <option value="Web Development">Web Development</option>
+                </select>
+
+            </div>
+
+            <div id="regPayBox" hidden>
+
+                <ul id="regModules" class="mod-list"></ul>
+
+                <p class="modal-cert">🎓 You get a certificate for every module you complete.</p>
+
+                <div class="mod-total">
+                    <span id="regSelected"></span>
+                    <b id="regTotal"></b>
+                </div>
+
+                <button type="button" class="modal-pay" id="regPayBtn">
+                    Pay Now
+                </button>
+
+                <div class="pay-panel" id="regPayPanel" hidden>
+                    <p class="pay-amount">Amount to pay: <b id="regPayAmount"></b></p>
+                    <div class="pay-upi" id="regPayUpi" hidden>
+                        <div class="pay-qr-row">
+                            <div class="pay-qr" id="regPayQr" aria-label="UPI QR code"></div>
+                            <div class="pay-qr-info">
+                                <p>UPI ID: <b id="regPayUpiId"></b> <button type="button" class="pay-copy" id="regPayCopy">Copy</button></p>
+                                <p class="pay-qr-hint">Scan with any UPI app to pay this exact amount.</p>
+                            </div>
+                        </div>
+                        <p class="pay-sub">Or pay with your own app (open this page on your phone):</p>
+                        <div class="pay-apps">
+                            <a class="pay-app" data-app="gpay" href="#">Google Pay</a>
+                            <a class="pay-app" data-app="phonepe" href="#">PhonePe</a>
+                            <a class="pay-app" data-app="paytm" href="#">Paytm</a>
+                            <a class="pay-app" data-app="upi" href="#">Other UPI apps</a>
+                        </div>
+                    </div>
+                    <a class="pay-alt" id="regPayLink" href="#" target="_blank" rel="noopener" hidden>Pay by card / net banking</a>
+                    <p class="pay-note" id="regPayNote"></p>
+                </div>
+
+            </div>
+
+        </div>
 
                 <button type="submit" class="primary-btn">
                     Submit
@@ -1174,6 +1269,54 @@
     </section>
 
 
+    <footer class="footer">
+
+        <div class="footer-top">
+
+            <div class="footer-brand">
+                <img src="logo.png" alt="ZyrofluxHub logo">
+                <div>
+                    <h3>ZyrofluxHub</h3>
+                    <p>Technology Training &amp; Project Development</p>
+                </div>
+            </div>
+
+            <div class="footer-cert">
+                <span aria-hidden="true">🎓</span>
+                <p>
+                    Finish every module of a course and receive that module's
+                    certificate from ZyrofluxHub. Complete all 5 modules to
+                    receive the full course completion certificate.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#learning">Learning</a>
+            <a href="#workshops">Workshops</a>
+            <a href="#courses">Courses</a>
+            <a href="#projects">Projects</a>
+        </div>
+
+        <div class="footer-social">
+            <a href="mailto:zyrofluxhub@gmail.com" data-email>
+                <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2" fill="#fff"/><path d="M2 7.5V17a2 2 0 0 0 2 2h2.5V10z" fill="#4285F4"/><path d="M22 7.5V17a2 2 0 0 1-2 2h-2.5V10z" fill="#34A853"/><path d="M2 7.2 12 14.5 22 7.2V6a1 1 0 0 0-1-1h-.4L12 11.3 3.4 5H3a1 1 0 0 0-1 1z" fill="#EA4335"/></svg>
+                <span data-email-text>zyrofluxhub@gmail.com</span>
+            </a>
+            <a href="https://www.instagram.com/zyroflux_hub" target="_blank" rel="noopener" data-instagram>
+                <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true"><defs><linearGradient id="igGrad2" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#feda75"/><stop offset=".3" stop-color="#fa7e1e"/><stop offset=".55" stop-color="#d62976"/><stop offset=".8" stop-color="#962fbf"/><stop offset="1" stop-color="#4f5bd5"/></linearGradient></defs><rect width="24" height="24" rx="6" fill="url(#igGrad2)"/><rect x="5" y="5" width="14" height="14" rx="4" fill="none" stroke="#fff" stroke-width="1.7"/><circle cx="12" cy="12" r="3.3" fill="none" stroke="#fff" stroke-width="1.7"/><circle cx="16.3" cy="7.7" r="1" fill="#fff"/></svg>
+                <span data-instagram-text>@zyroflux_hub</span>
+            </a>
+        </div>
+
+        <p class="footer-copy">© 2026 ZyrofluxHub. Ideas in Motion.</p>
+
+    </footer>
+
+
 <!-- COURSE DETAILS POP-UP -->
     <div class="modal" id="courseModal" hidden>
         <div class="modal-backdrop" data-close></div>
@@ -1186,6 +1329,11 @@
                 <div><small>Full course</small><b data-m-full></b></div>
                 <div><small>Per module</small><b data-m-permod></b></div>
             </div>
+            <h4>Who is joining?</h4>
+            <div class="aud" role="radiogroup" aria-label="Who is joining">
+                <label class="aud-opt"><input type="radio" name="aud" value="PSR Engineering College" checked><span>PSR Engineering College<small data-aud-price></small></span></label>
+                <label class="aud-opt"><input type="radio" name="aud" value="Other College"><span>Other college<small data-aud-price></small></span></label>
+            </div>
             <h4>Choose your modules</h4>
             <ul class="mod-list" data-m-modules></ul>
             <p class="modal-cert">🎓 You get a certificate for every module you complete.</p>
@@ -1197,8 +1345,14 @@
             <div class="pay-panel" hidden>
                 <p class="pay-amount">Amount to pay: <b data-pay-amount></b></p>
                 <div class="pay-upi" hidden>
-                    <p>UPI ID: <b data-pay-upi></b> <button type="button" class="pay-copy">Copy</button></p>
-                    <p class="pay-sub">Pay with your app (open this page on your phone):</p>
+                    <div class="pay-qr-row">
+                        <div class="pay-qr" data-pay-qr aria-label="UPI QR code"></div>
+                        <div class="pay-qr-info">
+                            <p>UPI ID: <b data-pay-upi></b> <button type="button" class="pay-copy">Copy</button></p>
+                            <p class="pay-qr-hint">Scan with any UPI app to pay this exact amount.</p>
+                        </div>
+                    </div>
+                    <p class="pay-sub">Or pay with your own app (open this page on your phone):</p>
                     <div class="pay-apps">
                         <a class="pay-app" data-app="gpay" href="#">Google Pay</a>
                         <a class="pay-app" data-app="phonepe" href="#">PhonePe</a>
@@ -1212,6 +1366,13 @@
         </div>
     </div>
 
+
+    <!-- REACT (used for the syllabus / module picker) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
+
+    <!-- QR CODE (offline, no external service - generates the UPI QR locally) -->
+    <script src="./qrcode.js"></script>
 
     <!-- JAVASCRIPT -->
     <script src="./script.js"></script>

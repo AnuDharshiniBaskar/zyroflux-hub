@@ -587,10 +587,6 @@ a, button { -webkit-tap-highlight-color: transparent; }
 @keyframes art-blink { 50% { opacity: 0; } }
 @keyframes art-dot { 50% { opacity: .25; transform: translateY(-3px); } }
 
-/* ---------- Hero highlights ---------- */
-.hero-stats { list-style: none; display: grid; grid-template-columns: repeat(4, auto); justify-content: start; gap: 8px 30px; margin-top: 38px; padding-top: 26px; border-top: 1px solid var(--line); }
-.hero-stats b { display: block; font: 700 1.5rem/1.1 var(--display); background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
-.hero-stats span { font-size: .82rem; color: var(--mute); }
 
 /* ---------- Theme toggle ---------- */
 .theme-toggle {
@@ -605,9 +601,79 @@ a, button { -webkit-tap-highlight-color: transparent; }
 :root[data-theme="light"] .theme-toggle .icon-moon { display: block; }
 body { transition: background-color .3s, color .3s; }
 
-@media (max-width: 900px) { .theme-toggle { margin-left: 0; } .hero-stats { grid-template-columns: repeat(2, auto); } }
+@media (max-width: 900px) { .theme-toggle { margin-left: 0; } }
 @media (max-width: 430px) { .brand-text { display: none; } }
 @media (prefers-reduced-motion: reduce) { .art * { animation: none !important; } }
 
 .art text { white-space: pre; }
 @media (min-width: 901px) { .nav-menu { margin: 0 auto; } }
+
+/* fee display on cards */
+.course-permod { margin-top: 16px; font-size: .74rem; letter-spacing: .14em; text-transform: uppercase; color: var(--mute); }
+.course-content .course-bottom { margin-top: 8px; padding-top: 12px; align-items: flex-start; }
+.course-bottom { justify-content: flex-start !important; }
+.course-bottom span, .course-bottom span:last-child { display: flex; flex-direction: column; font-size: .8rem; font-weight: 500; color: var(--mute); line-height: 1.3; text-align: left; }
+.course-bottom b { font: 600 1.15rem var(--display); color: var(--cyan); }
+.course-bottom span:last-child { text-align: right; }
+
+/* "Who is joining?" picker in the pop-up */
+.aud { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; margin-bottom: 22px; }
+.aud-opt { position: relative; cursor: pointer; }
+.aud-opt input { position: absolute; opacity: 0; inset: 0; width: 100%; height: 100%; margin: 0; cursor: pointer; }
+.aud-opt span {
+    display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; min-height: 58px;
+    padding: 8px 6px; text-align: center; font-size: .88rem; font-weight: 600; line-height: 1.25;
+    background: var(--field); border: 1px solid var(--line); border-radius: 12px; transition: border-color .2s, background .2s;
+}
+.aud-opt small { color: var(--cyan); font-weight: 600; font-size: .8rem; }
+.aud-opt:hover span { border-color: var(--blue); }
+.aud-opt input:checked + span { border-color: var(--cyan); background: var(--hover-tint); box-shadow: 0 0 0 1px var(--cyan) inset; }
+.aud-opt input:focus-visible + span { outline: 2px solid var(--cyan); outline-offset: 2px; }
+@media (max-width: 380px) { .aud { grid-template-columns: 1fr; } }
+
+/* Course & Payment block on the registration form */
+.reg-pay { margin-top: 26px; padding-top: 26px; border-top: 1px dashed var(--line); }
+.reg-pay h3 { font: 600 1.1rem var(--display); margin-bottom: 6px; }
+.reg-pay-hint { font-size: .9rem; color: var(--mute); margin-bottom: 18px; }
+#regPayBox { margin-top: 6px; }
+#regPayBox .modal-pay { margin-top: 4px; }
+
+/* ---------- Module syllabus rows (React) ---------- */
+.mod-row { display: flex; align-items: center; gap: 10px; }
+.mod-row label { flex: 1; }
+.mod-toggle {
+    flex: none; padding: 6px 12px; font: 600 .78rem var(--body); color: var(--cyan);
+    background: transparent; border: 1px solid var(--line); border-radius: 999px; cursor: pointer; white-space: nowrap;
+    transition: border-color .2s, background .2s;
+}
+.mod-toggle:hover { border-color: var(--cyan); background: var(--hover-tint); }
+.mod-topics { list-style: none; margin: 10px 0 4px 4px; padding: 12px 16px; display: grid; gap: 7px; border-left: 2px solid var(--cyan); background: var(--field); border-radius: 0 12px 12px 0; }
+.mod-topics li { padding-left: 18px; position: relative; font-size: .9rem; color: var(--mute); }
+.mod-topics li::before { content: "•"; position: absolute; left: 0; color: var(--cyan); }
+
+/* ---------- Footer ---------- */
+.footer { margin-top: 90px; padding: 56px var(--gutter) 34px; border-top: 1px solid var(--line); background: var(--bg-soft); }
+.footer-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 40px; flex-wrap: wrap; padding-bottom: 30px; border-bottom: 1px solid var(--line); }
+.footer-brand { display: flex; align-items: center; gap: 14px; }
+.footer-brand img { height: 50px; width: auto; }
+.footer-brand h3 { font: 600 1.1rem var(--display); }
+.footer-brand p { color: var(--mute); font-size: .88rem; margin-top: 2px; }
+.footer-cert { display: flex; align-items: flex-start; gap: 14px; max-width: 480px; padding: 16px 20px; border-radius: 16px; background: var(--hover-tint); border: 1px solid rgba(34, 211, 238, .35); }
+.footer-cert span { font-size: 1.6rem; line-height: 1; }
+.footer-cert p { font-size: .92rem; color: var(--ink); }
+.footer-links { display: flex; flex-wrap: wrap; gap: 10px 26px; margin-top: 26px; font-size: .92rem; }
+.footer-links a { color: var(--mute); text-decoration: none; }
+.footer-links a:hover { color: var(--cyan); }
+.footer-social { display: flex; flex-wrap: wrap; gap: 12px 20px; margin-top: 18px; }
+.footer-social a { display: inline-flex; align-items: center; gap: 8px; color: var(--mute); text-decoration: none; font-size: .9rem; }
+.footer-social a:hover { color: var(--cyan); }
+.footer-copy { margin-top: 26px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--mute); font-size: .82rem; }
+@media (max-width: 640px) { .footer-top { flex-direction: column; } .footer { padding-top: 44px; } }
+
+/* UPI QR code inside the payment panel */
+.pay-qr-row { display: flex; gap: 16px; align-items: flex-start; margin-bottom: 10px; }
+.pay-qr { flex: none; width: 128px; height: 128px; padding: 8px; background: #fff; border-radius: 12px; border: 1px solid var(--line); }
+.pay-qr svg { display: block; width: 100%; height: 100%; }
+.pay-qr-info { flex: 1; min-width: 0; }
+.pay-qr-hint { font-size: .82rem; color: var(--mute); margin-top: 4px !important; }
+@media (max-width: 420px) { .pay-qr-row { flex-direction: column; align-items: center; text-align: center; } }
