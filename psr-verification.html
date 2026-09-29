@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#000000">
+
+    <title>PSR Engineering College — Student Verification | ZyrofluxHub</title>
+    <meta name="description" content="PSR Engineering College student verification for ZyrofluxHub course registration.">
+
+    <script>
+        (function () {
+            var t = null;
+            try { t = localStorage.getItem("zh-theme"); } catch (e) {}
+            if (t !== "light" && t !== "dark") {
+                t = window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+            }
+            document.documentElement.setAttribute("data-theme", t);
+        })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;700&family=Figtree:wght@400;500;600&display=swap">
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="./style.css">
+
+    <style>
+        .verify-page { max-width: 720px; margin: 0 auto; padding: 56px var(--gutter) 90px; }
+        .verify-badge {
+            display: inline-block; font: 600 .78rem var(--body); letter-spacing: .18em; color: var(--cyan);
+            border: 1px solid var(--line); border-radius: 999px; padding: 6px 16px; margin-bottom: 20px;
+        }
+        .verify-page h1 { font: 700 clamp(1.7rem, 4vw, 2.4rem)/1.2 var(--display); letter-spacing: -.01em; margin-bottom: 14px; }
+        .verify-page > p.lead { color: var(--mute); max-width: 60ch; margin-bottom: 8px; }
+        .verify-summary {
+            margin: 22px 0 8px; padding: 14px 18px; border-radius: 14px; font-size: .92rem;
+            background: var(--hover-tint); border: 1px solid rgba(34, 211, 238, .35); color: var(--ink);
+        }
+        .verify-card {
+            margin-top: 30px; padding: 30px 28px; border-radius: 22px;
+            background: var(--card); border: 1px solid var(--line);
+        }
+        .verify-thanks { text-align: center; padding: 40px 20px; }
+        .verify-thanks .big { font-size: 3rem; margin-bottom: 14px; }
+        .verify-thanks h2 { font: 600 1.5rem var(--display); margin-bottom: 10px; }
+        .verify-thanks p { color: var(--mute); max-width: 50ch; margin: 0 auto 22px; }
+        .back-link { display: inline-flex; align-items: center; gap: 6px; margin-top: 8px; color: var(--cyan); text-decoration: none; font-weight: 600; font-size: .95rem; }
+        .back-link:hover { text-decoration: underline; }
+        .verify-card input[type="file"] { padding: 10px 14px; font-size: .9rem; color: var(--mute); }
+        .verify-card input[type="file"]::file-selector-button {
+            margin-right: 12px; padding: 8px 16px; border: 0; border-radius: 999px;
+            background: var(--grad); color: var(--on-grad); font: 600 .85rem var(--body); cursor: pointer;
+        }
+        .mini-footer { border-top: 1px solid var(--line); padding: 26px var(--gutter); display: flex; align-items: center; gap: 12px; color: var(--mute); font-size: .88rem; }
+        .mini-footer img { height: 30px; width: auto; }
+    </style>
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="brand">
+                <img src="logo.png" alt="ZyrofluxHub Logo">
+                <div class="brand-text">
+                    <h2>ZyrofluxHub</h2>
+                    <span>IDEAS IN MOTION</span>
+                </div>
+            </a>
+            <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to light theme">
+                <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.6M12 18.9v2.6M2.5 12h2.6M18.9 12h2.6M5.3 5.3l1.9 1.9M16.8 16.8l1.9 1.9M18.7 5.3l-1.9 1.9M7.2 16.8l-1.9 1.9"/></svg>
+                <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5a8.5 8.5 0 1 0 10.7 10.7Z"/></svg>
+            </button>
+        </div>
+    </header>
+
+    <main class="verify-page">
+
+        <span class="verify-badge">PSR ENGINEERING COLLEGE</span>
+        <h1>Student Verification</h1>
+        <p class="lead">
+            This confirms you're a PSR Engineering College student so you get the
+            ₹200-per-module fee. All fields below are mandatory.
+        </p>
+
+        <p class="verify-summary" id="interestSummary" hidden></p>
+
+        <div class="verify-card" id="verifyCard">
+
+            <form id="psrForm" name="psr-verification" method="POST" enctype="multipart/form-data" data-netlify="true" netlify-honeypot="bot-field">
+
+                <input type="hidden" name="form-name" value="psr-verification">
+                <input type="hidden" name="interest" id="hiddenInterest">
+                <p hidden><label>Leave this empty: <input name="bot-field"></label></p>
+
+                <div class="form-group">
+                    <label for="pName">Full Name (as per College ID)</label>
+                    <input type="text" id="pName" name="name" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="pRoll">Roll Number</label>
+                    <input type="text" id="pRoll" name="roll_no" placeholder="Enter your roll number" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="pCollege">College</label>
+                    <select id="pCollege" name="college" required>
+                        <option value="PSR Engineering College" selected>PSR Engineering College</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="pDepartment">Department</label>
+                    <select id="pDepartment" name="department" required>
+                        <option value="" disabled selected>Select your department</option>
+                        <option value="Computer Science &amp; Engineering (CSE)">Computer Science &amp; Engineering (CSE)</option>
+                        <option value="Information Technology (IT)">Information Technology (IT)</option>
+                        <option value="Artificial Intelligence &amp; Data Science (AI&amp;DS)">Artificial Intelligence &amp; Data Science (AI&amp;DS)</option>
+                        <option value="Artificial Intelligence &amp; Machine Learning (AI&amp;ML)">Artificial Intelligence &amp; Machine Learning (AI&amp;ML)</option>
+                        <option value="Electronics &amp; Communication (ECE)">Electronics &amp; Communication (ECE)</option>
+                        <option value="Electrical &amp; Electronics (EEE)">Electrical &amp; Electronics (EEE)</option>
+                        <option value="Mechanical Engineering">Mechanical Engineering</option>
+                        <option value="Civil Engineering">Civil Engineering</option>
+                        <option value="BCA / MCA">BCA / MCA</option>
+                        <option value="B.Sc / M.Sc (Computer Science)">B.Sc / M.Sc (Computer Science)</option>
+                        <option value="Others">Others (not in the list)</option>
+                    </select>
+                </div>
+
+                <div class="form-group" id="deptOtherBox" hidden>
+                    <label for="deptOther">Your Department</label>
+                    <input type="text" id="deptOther" name="department_other" placeholder="Type your department">
+                </div>
+
+                <div class="form-group">
+                    <label for="pEmail">Email Address</label>
+                    <input type="email" id="pEmail" name="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="pPhone">Phone Number</label>
+                    <input type="tel" id="pPhone" name="phone" placeholder="Enter your phone number" inputmode="tel" pattern="[0-9+\-\s]{10,15}" title="Enter a valid phone number (10 to 15 digits)" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="pIdCard">College ID Card Photo</label>
+                    <input type="file" id="pIdCard" name="id_card" accept="image/*,.pdf" required>
+                </div>
+
+                <button type="submit" class="primary-btn" style="width:100%">
+                    Submit Verification &amp; Registration
+                </button>
+
+            </form>
+
+            <div class="verify-thanks" id="verifyThanks" hidden>
+                <div class="big">🎓</div>
+                <h2>Thanks — you're verified!</h2>
+                <p>Your details have been sent to ZyrofluxHub. We'll confirm your seat at the PSR Engineering College rate soon.</p>
+                <a class="back-link" href="index.html">← Back to ZyrofluxHub</a>
+            </div>
+
+        </div>
+
+        <a class="back-link" href="index.html">← Not a PSR Engineering College student? Go back</a>
+
+    </main>
+
+    <div class="mini-footer">
+        <img src="logo.png" alt="">
+        <span>© 2026 ZyrofluxHub · Ideas in Motion</span>
+    </div>
+
+    <script src="./psr-verification.js"></script>
+
+</body>
+</html>
